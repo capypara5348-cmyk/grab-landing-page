@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HomePage</title>
+
+  <!-- Preload ảnh nền -->
+  <link rel="preload" as="image" href="./assets/bg.png" />
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <video id="video" src="./assets/video.mp4" autoplay muted loop></video>
+  <main class="wrapper">
+    <!-- Home -->
+    <section id="home" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <!-- Thay cái này -->
+          <img src="./assets/student/header.png" alt="Header" class="header" />
+        </div>
+
+        <div class="home__card">
+          <img src="./assets/title.png" alt="" class="title" />
+          <div class="box">
+            <img src="./assets/home-bike.png" alt="" />
+            <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="bike" />
+          </div>
+          <div class="box">
+            <img src="./assets/home-food.png" alt="" />
+            <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="food" />
+          </div>
+          <div class="box">
+            <img src="./assets/home-mart.png" alt="" />
+            <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="mart" />
+          </div>
+          <img src="./assets/footer.png" alt="" class="footer" />
+
+          <div class="row">
+            <div class="box">
+              <!-- Thay cái này -->
+              <img src="./assets/basedown.png" alt="" />
+              <img src="./assets/kitkat-icon.png" alt="kitkat-icon" class="basedown-img" />
+              <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="kitkat" />
+            </div>
+            <div class="box">
+              <!-- Thay cái này -->
+              <img src="./assets/basedown.png" alt="" />
+              <img src="./assets/coca-icon.png" alt="coca-icon" class="basedown-img" />
+              <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="coca" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Thay cái này -->
+      <img src="./assets/student.png" alt="student" class="student-img" />
+    </section>
+
+    <!-- Bike -->
+    <section id="bike" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/student/header.png" alt="Header" class="header" />
+        </div>
+        <div class="card" style="height: 791px;">
+          <!-- Thay cái này -->
+          <img src="./assets/student/bike-cards.png" alt="bike-cards" style="height: 712px;" />
+        </div>
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+      <!-- Thay cái này -->
+      <img src="./assets/bike-icon.png" alt="bike-icon" class="icon-img" />
+    </section>
+
+    <!-- Food -->
+    <section id="food" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/student/header.png" alt="Header" class="header" />
+        </div>
+        <div class="card">
+          <!-- Thay cái này -->
+          <img src="./assets/student/food-cards.png" alt="bike-cards" />
+        </div>
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+
+      <img src="./assets/food-icon.png" alt="food-icon" class="icon-img" />
+    </section>
+
+    <!-- Mart -->
+    <section id="mart" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/student/header.png" alt="Header" class="header" />
+        </div>
+        <div class="card">
+          <!-- Thay cái này -->
+          <img src="./assets/student/mart-cards.png" alt="mart-cards" />
+        </div>
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+
+      <img src="./assets/mart-icon.png" alt="mart-icon" class="icon-img" />
+    </section>
+
+    <!-- Kitkat -->
+    <section id="kitkat" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/student/header.png" alt="Header" class="header" />
+        </div>
+        <!-- Thay cái này -->
+        <img src="./assets/kitkat-icon.png" alt="kitkat-icon" class="text-img" />
+        <!-- Thay cái này -->
+        <img src="./assets/student/kitkat-cards.png" alt="kitkat-cards" style="margin-top: 23px;" />
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Coca -->
+    <section id="coca" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/student/header.png" alt="Header" class="header" />
+        </div>
+        <!-- Thay cái này -->
+        <img src="./assets/coca-icon.png" alt="coca-icon" class="text-img" />
+        <!-- Thay cái này -->
+        <img src="./assets/student/coca-cards.png" alt="coca-cards" style="margin-top: 23px;" />
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll(".btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.dataset.id;
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: "instant" });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

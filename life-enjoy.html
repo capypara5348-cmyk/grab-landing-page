@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HomePage</title>
+
+  <!-- Preload ảnh nền -->
+  <link rel="preload" as="image" href="./assets/bg.png" />
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <video id="video" src="./assets/video.mp4" autoplay muted loop></video>
+  <main class="wrapper">
+    <!-- Home -->
+    <section id="home" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <!-- Thay cái này -->
+          <img src="./assets/life-enjoy/header.png" alt="Header" class="header" />
+        </div>
+
+        <div class="home__card">
+          <img src="./assets/title.png" alt="" class="title" />
+          <div class="box">
+            <img src="./assets/car.png" alt="" />
+            <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="bike" />
+          </div>
+          <div class="box">
+            <img src="./assets/home-food.png" alt="" />
+            <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="food" />
+          </div>
+          <div class="box">
+            <img src="./assets/home-mart.png" alt="" />
+            <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="mart" />
+          </div>
+          <img src="./assets/footer.png" alt="" class="footer" />
+
+          <div class="row">
+            <div class="box">
+              <!-- Thay cái này -->
+              <img src="./assets/basedown.png" alt="" />
+              <img src="./assets/life-enjoy/tresemme-icon.png" alt="tresemme-icon" class="basedown-img" />
+              <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="kitkat" />
+            </div>
+            <div class="box">
+              <!-- Thay cái này -->
+              <img src="./assets/basedown.png" alt="" />
+              <img src="./assets/life-enjoy/somersby-icon.png" alt="somersby-icon" class="basedown-img" />
+              <img src="./assets/explore-button.png" alt="" class="btn explore-btn" data-id="coca" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Thay cái này -->
+      <!-- Chỗ này không thay class -->
+      <img src="./assets/life-enjoy/life-enjoy.png" alt="life-enjoy" class="student-img" />
+    </section>
+
+    <!-- Car -->
+    <section id="bike" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/life-enjoy/header.png" alt="Header" class="header" />
+        </div>
+        <div class="card car-cards">
+          <!-- Thay cái này -->
+          <img src="./assets/life-enjoy/car-life.png" alt="car-life" />
+        </div>
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+      <!-- Thay cái này -->
+      <img src="./assets/office-worker/car-icon.png" alt="car-icon" class="icon-img" />
+    </section>
+
+    <!-- Food -->
+    <section id="food" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/life-enjoy/header.png" alt="Header" class="header" />
+        </div>
+        <div class="card car-cards">
+          <!-- Thay cái này -->
+          <img src="./assets/life-enjoy/food-life.png" alt="food-life" />
+        </div>
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+
+      <img src="./assets/food-icon.png" alt="food-icon" class="icon-img" />
+    </section>
+
+    <!-- Mart -->
+    <section id="mart" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/life-enjoy/header.png" alt="Header" class="header" />
+        </div>
+        <div class="card car-cards">
+          <!-- Thay cái này -->
+          <img src="./assets/life-enjoy/mart-life.png" alt="mart-life" />
+        </div>
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+
+      <img src="./assets/mart-icon.png" alt="mart-icon" class="icon-img" />
+    </section>
+
+    <!-- Kitkat -->
+    <section id="kitkat" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/life-enjoy/header.png" alt="Header" class="header" />
+        </div>
+        <!-- Thay cái này -->
+        <img src="./assets/life-enjoy/tresemme-icon.png" alt="tresemme-icon" class="text-img" />
+        <!-- Thay cái này -->
+        <img src="./assets/life-enjoy/trese-life.png" alt="trese-life" style="margin-top: 54px;" />
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Coca -->
+    <section id="coca" class="page">
+      <div class="container">
+        <!-- Header -->
+        <div class="header-wrap">
+          <img src="./assets/life-enjoy/header.png" alt="Header" class="header" />
+        </div>
+        <!-- Thay cái này -->
+        <img src="./assets/life-enjoy/somersby-icon.png" alt="somersby-icon" class="text-img" />
+        <!-- Thay cái này -->
+        <img src="./assets/life-enjoy/somers-life.png" alt="somers-life" style="margin-top: 54px;" />
+
+        <div class="back-button">
+          <img src="./assets/back-button.png" alt="" class="btn" data-id="home" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll(".btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = btn.dataset.id;
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: "instant" });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
